@@ -1,5 +1,13 @@
-<script src="Lightaxe/index.js"></script>
-<script>
-    const test1 = new test;
-    test1.test1();
-</script>
+<html>
+    <head>
+        <script src="Lightaxe/index.js"></script>
+    </head>
+    <body>
+        <div id="p" style="width:50px; height:50px; Background-color:red; position: absolute; top:0%;"></div>
+        <script>
+            const test1 = new test;
+            test1.test1(document.getElementById("p"));
+            console.log(document.getElementById("p"))
+        </script>
+    </body>
+</html>

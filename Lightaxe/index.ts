@@ -2,11 +2,12 @@ class test {
     myWorker:any
     constructor(){
         alert("test initialized")
-        this.myWorker = new Worker("worker.js");
+        this.myWorker = new Worker("/worker.js");
     }
-    test1():any{
+    test1(Player):any{
+        console.log(Player)
         this.myWorker.postMessage(["GravSwitch"]);
-        this.myWorker.postMessage(["SetPlayer", ]);
+        this.myWorker.postMessage(["SetPlayer", Player]);
     } 
     
 }
